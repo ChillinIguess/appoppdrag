@@ -7,17 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
-
 <body>
     <header>
-<h1></h1>
-<nav>
-   
-    <select name="navmeny" id="navmeny"> 
-        <option value="index">Hjem</option>
-    <option value="om"><a href="om.html">Om oss</a></option>
-    <option value="registrer"><a href="registrer.html">registrer deg</a></option></select>
-</nav>
+        <h1>Appen</h1>
+        <nav>
+            <a href="">Hjem</a>
+            <a href="{{url_for('om')}}">Om oss</a>
+            <a href="{{url_for('registrer')}}">Registrer deg</a>
+        </nav>
+
     </header>
     <main>
 
