@@ -5,24 +5,36 @@ background-color: rgb(34, 34, 34);
 }
 header {
     background-color: white;
+    border-radius: 15px;
 }
-h1{display: flex;
+h1{
+    
+    display: flex;
     margin-right: 4%;
     justify-content: center;
+    
 }
 nav{
     display: flex;
     margin-left: 10%;
-    margin-right: 10%;
-    justify-content: space-between;
+    margin-right: 12%;
+    justify-content: space-around;
+  
 
 }
 form {
     margin-top: 5%;
-    margin-right: 70%;
-    background-color: rgb(253, 252, 252);
+    margin-right: 65%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
     
 }
 table{
     margin-left:5%;
+    margin-top: -5%;
+ 
+}
+button {
+    margin-top: 2%;
+    margin-left: 3%;
 }

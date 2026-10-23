@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
@@ -7,17 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
+
 <body>
     <header>
-        <h1>Appen</h1>
-        <nav>
-            <a href="">Hjem</a>
-            <a href="{{url_for('om')}}">Om oss</a>
-            <a href="{{url_for('registrer')}}">Registrer deg</a>
-        </nav>
+        <h1>Registrer deg</h1>
 
+        <nav>
+            <a></a>
+            <a></a>
+            <a></a>
+        </nav>
     </header>
     <main>
+      
+        <form method="POST">
+            <table>
+                <tr>
+                    <td><label for="navn">Brukernavnet ditt:</label></td>
+                    <td><input type="text" id="navn" name="navn"></td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td><label for="epost">E-mailen din:</label></td>
+                    <td><input type="text" name="epost" id="epost"></td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td><label for="alder">Din aldersgruppe:</label></td>
+
+                    <td>
+                            {% for gruppe in alder %}
+                           <input type="radio" name="alder" value="{{ gruppe }}"> {{ gruppe }}
+                            {% endfor %}</td>
+                </tr><br>
+            </table>
+           
+            <button type="submit">Send</button>
+         
+        </form>
 
     </main>
     <footer>
