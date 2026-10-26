@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,7 @@
         <h1>Registrer deg</h1>
 
         <nav>
-            <a></a>
-            <a></a>
-            <a></a>
+            
         </nav>
     </header>
     <main>
@@ -42,11 +40,14 @@
                             {% for gruppe in alder %}
                            <input type="radio" name="alder" value="{{ gruppe }}"> {{ gruppe }}
                             {% endfor %}</td>
-                </tr><br>
+                </tr><br>  <tr><td><button type="submit">Send </button></td>
+            <td>{% if feil %}
+            <p> {{ feil }}</p>
+            {% endif %}</tr></td>
+         
             </table>
            
-            <button type="submit">Send</button>
-         
+          
         </form>
 
     </main>

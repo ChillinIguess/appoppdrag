@@ -25,16 +25,28 @@ nav{
 form {
     margin-top: 5%;
     margin-right: 65%;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(243, 243, 243);
     border-radius: 15px;
     
 }
 table{
     margin-left:5%;
     margin-top: -5%;
+    p {
+        color: rgb(136, 0, 0);
+        background-color: rgb(255, 243, 139);
+        margin-right: 50%;
+    }
  
 }
 button {
     margin-top: 2%;
     margin-left: 3%;
+}
+.produkter{
+    display: grid;
+    color: blue;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    border-radius: 20px;
+    padding: 15px;
 }

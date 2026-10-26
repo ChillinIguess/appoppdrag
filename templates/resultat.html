@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,25 @@
 <body>
     <header>
         <h1>Appen</h1>
-        <p>{{ navn }}</p>
-        <p> {{ epost }}</p>
-        <p> {{ alder }}</p>
+      
+        
+   
         <nav>
-            <a href="">Hjem</a>
+            <a href="{{url_for('resultat')}}">Hjem</a>
             <a href="{{url_for('om')}}">Om oss</a>
            
         </nav>
 
     </header>
     <main>
-
+<div class="produkt">
+    {% for produkt in produkter %}
+    <p>{{ pnavn }} </p>
+    <p>{{ pris }}</p>
+    <p> {{ beskrivelse }}</p>
+    {% endfor %}
+    
+</div>
     </main>
     <footer>
 
