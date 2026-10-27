@@ -39,7 +39,8 @@ def index():
 def resultat():
     produkter = [
         {"pnavn": "silksong", "pris": 230, "beskrivelse": "Hollow Knight: Silksong"},
-        {"pnavn": "Deltarune", "pris": 259, "beskrivelse": "Deltarune ch 1-5"}
+        {"pnavn": "Deltarune", "pris": 259, "beskrivelse": "Deltarune ch 1-5"},
+        
 
     ]
     return render_template("resultat.html", produkter=produkter)

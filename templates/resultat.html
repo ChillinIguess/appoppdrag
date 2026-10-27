@@ -23,9 +23,12 @@
     <main>
 <div class="produkt">
     {% for produkt in produkter %}
-    <p>{{ pnavn }} </p>
-    <p>{{ pris }}</p>
-    <p> {{ beskrivelse }}</p>
+    
+    <div class="produktkort">
+        <h2>{{produkt.pnavn}}</h2>
+        <p>{{produkt.pris}}</p>
+        <p>{{produkt.beskrivelse}}</p>
+    </div>
     {% endfor %}
     
 </div>

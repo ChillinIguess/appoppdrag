@@ -43,10 +43,22 @@ button {
     margin-top: 2%;
     margin-left: 3%;
 }
-.produkter{
+.produkt{
     display: grid;
-    color: blue;
+ 
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    border-radius: 20px;
+    gap: 20px;
+    width: 75%;
+    margin: 20px auto;
+
+
+}
+.produktkort {
+    background-color: hsl(189,73%,76%);
     padding: 15px;
+    border-radius: 20px;
+}
+.produkt p {
+   
+ 
 }
